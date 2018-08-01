@@ -28,12 +28,23 @@ public class EmployeeArrayOperations implements EmployeeOperations{
     }
 
     public Employee findEmployee(int empId) {
+		int p, q, r;
+		int result = (p * q * r)/100;
+<<<<<<< .mine
 		int x = 0;
 		
 		if (x == 3) {
 			System.out.println("It is inside logic")
 		}
         for (int i = 0; i < size; i++) {
+=======
+		int p, q, r;
+		int result = (p * q * r)/100;
+		for (int i = 0; i < size; i++) {
+
+
+
+>>>>>>> .theirs
             if (employees[i].getId() == empId) {
                 return employees[i];
             }
@@ -42,6 +53,9 @@ public class EmployeeArrayOperations implements EmployeeOperations{
 			System.out.println("It is none")
 		}
         }
+		//another logic here
+		int x = 0;
+		System.out.println(x);
         return null;
     }
 
@@ -49,6 +63,10 @@ public class EmployeeArrayOperations implements EmployeeOperations{
         return Arrays.copyOfRange(employees, 0, size);
     }
 
+	public boolean anotherMethod(Employee employee) {
+	
+		//some logic
+	}
     public boolean deleteEmployee(int empId) {
         boolean flag = false;
         for (int i = 0; i < size; i++) {
@@ -66,6 +84,8 @@ public class EmployeeArrayOperations implements EmployeeOperations{
 
     public boolean updateEmployee(Employee employee) {
         boolean flag = false;
+		int x = 10;
+		int y = x + y;
         for (int i = 0; i < size; i++) {
             if (employees[i].getId() == employee.getId()) {
                 employees[i] = employee;
