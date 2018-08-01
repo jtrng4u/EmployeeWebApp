@@ -28,10 +28,19 @@ public class EmployeeArrayOperations implements EmployeeOperations{
     }
 
     public Employee findEmployee(int empId) {
+		int x = 0;
+		
+		if (x == 3) {
+			System.out.println("It is inside logic")
+		}
         for (int i = 0; i < size; i++) {
             if (employees[i].getId() == empId) {
                 return employees[i];
             }
+			
+		if (x == 9) {
+			System.out.println("It is none")
+		}
         }
         return null;
     }
