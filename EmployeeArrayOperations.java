@@ -28,11 +28,16 @@ public class EmployeeArrayOperations implements EmployeeOperations{
     }
 
     public Employee findEmployee(int empId) {
-        for (int i = 0; i < size; i++) {
+		int p, q, r;
+		int result = (p * q * r)/100;
+		for (int i = 0; i < size; i++) {
             if (employees[i].getId() == empId) {
                 return employees[i];
             }
         }
+		//another logic here
+		int x = 0;
+		System.out.println(x);
         return null;
     }
 
