@@ -36,6 +36,10 @@ public class EmployeeArrayOperations implements EmployeeOperations{
         return Arrays.copyOfRange(employees, 0, size);
     }
 
+	public boolean anotherMethod(Employee employee) {
+	
+		//some logic
+	}
     public boolean deleteEmployee(int empId) {
         boolean flag = false;
         for (int i = 0; i < size; i++) {
@@ -53,6 +57,8 @@ public class EmployeeArrayOperations implements EmployeeOperations{
 
     public boolean updateEmployee(Employee employee) {
         boolean flag = false;
+		int x = 10;
+		int y = x + y;
         for (int i = 0; i < size; i++) {
             if (employees[i].getId() == employee.getId()) {
                 employees[i] = employee;
