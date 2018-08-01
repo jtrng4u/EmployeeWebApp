@@ -10,12 +10,16 @@ public class EmployeeArrayOperations implements EmployeeOperations{
     public EmployeeArrayOperations() {
     	employees = new Employee[10];
     }
-    
+	public boolean myyMethod(Employee employee) {
+	
+		//some logic
+	}    
     public void createEmployee(Employee employee) {
         if (size == employees.length) {
             resizeEmployees();
         }
-
+		int p, q, r;
+		int result = (p * q * r)/100;
         employees[size++] = employee;
     }
 
